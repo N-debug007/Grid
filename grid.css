@@ -1,0 +1,71 @@
+:root {
+  --item-width: 300px;
+}
+section {
+  border: 3px solid white;
+  margin-bottom: 1rem;
+  position: relative;
+}
+div {
+  border: 1px solid black;
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+}
+section.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 75px, 75px, 75px, 75px;
+  grid-template-areas: "";
+}
+#header {
+  grid-area: 0;
+}
+#addition {
+  grid-area: "+";
+}
+#subtraction {
+  grid-area: "-";
+}
+#multiplication {
+  grid-area: "*";
+}
+#division {
+  grid-area: "÷";
+}
+#seven {
+  grid-area: 7;
+}
+#eight {
+  grid-area: 8;
+}
+#nine {
+  grid-area: 9;
+}
+#four {
+  grid-area: 4;
+}
+#five {
+  grid-area: 5;
+}
+#six {
+  grid-area: 6;
+}
+#one {
+  grid-area: 1;
+}
+#two {
+  grid-area: 2;
+}
+#three {
+  grid-area: 3;
+}
+#zero {
+  grid-area: 0;
+}
+#decimalpoint {
+  grid-area: ".";
+}
+#refresh {
+  grid-area: AC;
+}
