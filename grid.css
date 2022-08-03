@@ -1,71 +1,55 @@
-:root {
-  --item-width: 300px;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
-section {
-  border: 3px solid white;
-  margin-bottom: 1rem;
-  position: relative;
-}
-div {
-  border: 1px solid black;
+
+*,
+*::before,
+*::after {
   margin: 0;
-  text-align: center;
-  font-size: 30px;
+  padding: 0;
+  box-sizing: inherit;
 }
-section.grid {
+.calculator {
+  border: 1px solid black;
+  position: relative;
+  width: 300px;
+}
+.calculator-screen {
+  width: 100%;
+  font-size: 5rem;
+  height: 55px;
+  border: none;
+  background-color: rgb(62, 60, 60);
+  color: #fff;
+  text-align: end;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+button,
+.all-clear {
+  height: 50px;
+  background-color: #c4c4c4;
+  border: 1px solid #c4c4c4;
+  background-color: transparent;
+  font-size: 2rem;
+  color: black;
+}
+.operator {
+  background-color: #b5c6d2;
+  color: inherit;
+}
+.calculator-keys {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 75px, 75px, 75px, 75px;
-  grid-template-areas: "";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#header {
-  grid-area: 0;
-}
-#addition {
-  grid-area: "+";
-}
-#subtraction {
-  grid-area: "-";
-}
-#multiplication {
-  grid-area: "*";
-}
-#division {
-  grid-area: "÷";
-}
-#seven {
-  grid-area: 7;
-}
-#eight {
-  grid-area: 8;
-}
-#nine {
-  grid-area: 9;
-}
-#four {
-  grid-area: 4;
-}
-#five {
-  grid-area: 5;
-}
-#six {
-  grid-area: 6;
-}
-#one {
-  grid-area: 1;
-}
-#two {
-  grid-area: 2;
-}
-#three {
-  grid-area: 3;
-}
-#zero {
-  grid-area: 0;
-}
-#decimalpoint {
-  grid-area: ".";
-}
-#refresh {
-  grid-area: AC;
+.equal-sign {
+  background-color: #f17377;
+  border-color: #c4c4c4;
+  color: black;
+  height: 100%;
+  grid-row-start: 2;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
 }
